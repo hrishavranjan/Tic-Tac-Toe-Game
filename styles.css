@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('Images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Playwrite IS", cursive;
+    color: rgb(55, 99, 137);
+}
+
+.game-mode {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.game-mode label {
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    width: 306px; 
+    margin-top: 20px;
+    background-color: rgba(17, 51, 123, 0.8);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cell {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    cursor: pointer;
+    color: transparent;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell.x::before {
+    content: 'X';
+    color: rgba(0, 255, 255, 0.8);
+}
+
+.cell.o::before {
+    content: 'O';
+    color: rgba(255, 0, 255, 0.8);
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.developer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

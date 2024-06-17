@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for copyright and developer notice */
+        .copyright {
+            text-align: center;
+            margin-top: 20px; /* Adjust margin from the board */
+        }
+
+        .developer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tic-Tac-Toe Game</h1>
+    </header>
+
+    <div class="game-mode">
+        <label>
+            <input type="radio" name="mode" value="pvp" checked> Player vs Player
+        </label>
+        <label>
+            <input type="radio" name="mode" value="pve"> Player vs Bot
+        </label>
+    </div>
+
+    <div id="board" class="board">
+        <div class="cell" id="cell-0"></div>
+        <div class="cell" id="cell-1"></div>
+        <div class="cell" id="cell-2"></div>
+        <div class="cell" id="cell-3"></div>
+        <div class="cell" id="cell-4"></div>
+        <div class="cell" id="cell-5"></div>
+        <div class="cell" id="cell-6"></div>
+        <div class="cell" id="cell-7"></div>
+        <div class="cell" id="cell-8"></div>
+    </div>
+
+    <button id="reset-btn" class="reset-btn">Reset Game</button>
+    
+    <footer>
+        <p>&copy; 2024 Hrishav Ranjan. All rights reserved.</p>
+    </footer>
+
+    <div class="developer">
+        <p>Developed by Hrishav Ranjan</p>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <!-- Modal for game result -->
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <p id="result-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <div class="social-media">
+        <a href="https://www.youtube.com/channel/UCtkgWHiIMndYc_ObN0o8bVA" target="_blank">
+          <img src="Images/YouTube1.png" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/rishavranjan__/" target="_blank">
+          <img src="Images/Instagram.jpeg" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/hrishav-ranjan-6b358a254/" target="_blank">
+          <img src="Images/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/hrishavranjan" target="_blank">
+          <img src="Images/Github.jpeg" alt="GitHub">
+        </a>
+    </div>
+</body>
+</html>
